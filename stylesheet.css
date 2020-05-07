@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    border-top: 1.5px solid rgba(0,0,0,0.15);
+}
+
+p{
+    font-family: 'Overpass', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 10px auto;
+}
+
+a{
+    text-decoration: none;
+    color: #3858c3
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.wrapper{
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 50px;
+    line-height: 30px;
+}
+
+.section{
+    margin-bottom: 50px;
+}
+
+#top{
+    font-size: 10px;
+    color: white;
+    background-color: black;
+}
+#top h1 {
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#about{
+    background: linear-gradient(-15deg, #003381, #c9315d);
+    color: white;
+    margin-bottom: -10px;
+}
+
+#portList {
+    list-style: none;
+    margin-left: 0px;
+    padding: 0;
+}
+#portList > li{
+    margin-left: 0px;
+    margin-top: 40px;
+}
+#portList > li > img{
+    width: 75px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 25%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+#portList > li > h2 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.appHead{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.appHead p {
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+}
+
+#contact{
+    margin-top: -105px;
+}
+
+#footer {
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+#footer > .wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer a {
+    color: grey;
+}
+
+@media (max-width: 500px){
+    body{
+        background-color: #2f2f2f;
+    }
+    
+    .wrapper{
+        padding: 16px;
+    }
+    #top{
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+        color: #ffffff;
+        padding-top: 4px;
+    }
+    
+    #about{
+        margin: 15px;
+        margin-bottom: -10px;
+        border-radius: 8px;
+        background: linear-gradient(20deg, #6fe3e7, #4fb8d9 25%, #5648c1);
+        background: linear-gradient(20deg, #004574, #36e595);
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        color: rgba(255, 255, 255, 0.83);
+        padding: 10px;
+    }
+    
+    #about h1{
+        color: white;
+    }
+    
+    #top h1{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .social {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #portfolio {
+        color: white;
+    }
+    
+    #portfolio > p{
+        padding: 15px;   
+        margin-bottom: -20px;
+    }
+    #portfolio > h1{
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: -30px;
+    }
+    
+    #portList > li{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 8px;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        color: black;
+        margin-bottom: -15px;
+    }
+    
+    #portList > li > img {
+        display: block;
+        margin: 0 auto;
+    }
+    #portList {
+        text-align: center;
+    }
+    #portList p {
+        text-align: left;
+    }
+    .appHead{
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    #co{
+        line-height: 40px;
+    }
+    #contact{
+        background: linear-gradient(-20deg, #7b4397, #dc2430);
+        color: rgba(255, 255, 255, 0.780);
+        padding: 0;
+        margin: 15px;
+        margin-top: -25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        margin-bottom: 40px;
+    }
+    
+    hr{
+        display: none;
+    }
+    
+    #contact a {
+        color: #ffffff;
+    }
+    #contact h1{
+        color: white;
+        margin-bottom: -10px;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 800;
+    }
+     
+}
