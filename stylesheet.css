@@ -8,6 +8,7 @@ body{
 hr {
     border: none;
     border-top: 1.5px solid rgba(0,0,0,0.15);
+    border-radius: 1px;
 }
 
 p{
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a{
     text-decoration: none;
-    color: #3858c3
+    color: #3858c3;
 }
 
 a:hover{
@@ -112,7 +113,39 @@ a:hover{
     color: grey;
 }
 
-@media (max-width: 500px){
+@media (prefers-color-scheme: dark) and (min-width: 501px) {
+    #aboutText {
+        color: rgb(209, 209, 209);
+    }
+
+    #about {
+        background: linear-gradient(-15deg, #022455, #881e3c);
+    }
+    
+    body {
+        background-color: black;
+        color: rgb(240, 240, 240);
+    }
+
+    body p {
+        color: rgb(168, 168, 168);
+    }
+
+    body a {
+        color: #95a7e2 !important;
+        font-weight: bold;
+    }
+
+    hr {
+        border-color: rgb(168, 168, 168);
+    }
+
+    #footer {
+        background-color: rgb(29, 29, 29);
+    }
+}
+
+@media (max-width: 500px) {
     body{
         background-color: #2f2f2f;
     }

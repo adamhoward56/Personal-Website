@@ -17,7 +17,7 @@
 	<div id="about" class="section">
     <div class="wrapper">
     <h1>About Me</h1>
-    <p>Hi there! I'm an undergrad student studying computer science at the University of Maryland, College Park. I've been programming for nearly a decade and use my free time to develop games, websites, apps, and more. Below are a few of my favorites.</p>
+    <p id="aboutText">Hi there! I'm an undergrad student studying computer science at the University of Maryland, College Park. I've been programming for nearly a decade and use my free time to develop games, websites, apps, and more. Below are a few of my favorites.</p>
 
     <div class="social">
         <a target="_blank" href="https://www.linkedin.com/in/adamhoward56/"><img src="icons/linkedin.svg" style="height: 30px; margin-right: 15px;"></a>
@@ -67,7 +67,7 @@
                     <td><h2>Sketch Pad</h2></td>
                 </tr>
                 <tr>
-                    <td><a target="_blank" href="https://goo.gl/dAAQ8h"><p>Chrome Web Store</p></a></td>
+                    <td><p><a target="_blank" href="https://goo.gl/dAAQ8h">Chrome Web Store</a></p></td>
                 </tr>
             </table>
             <p>Featured on the front page of the Chrome Web Store with more than 1 million total installs! Sketch Pad is a drawing tool for Google Chrome.</p>
@@ -79,7 +79,7 @@
                     <td><h2>Switchy Bridge</h2></td>
                 </tr>
                 <tr>
-                    <td><p><!--<a target="_blank" href="https://goo.gl/PJHm5I">App Store</a>--><a target="_blank" href="https://goo.gl/k7RIsr">Google Play</a></p></td>
+                    <td><p><a target="_blank" href="https://goo.gl/k7RIsr">Google Play</a></p></td>
                 </tr>
             </table>
             <p>The first game I published to the Google Play Store. Made with C#, Unity, and Blender! Switchy Bridge has Google Play leaderboard support and video advertisements.</p>
@@ -91,7 +91,7 @@
                     <td><h2>Clean Tab</h2></td>
                 </tr>
                 <tr>
-                    <td><a target="_blank" href="https://goo.gl/lqzEOT"><p>Chrome Web Store</p></a></td>
+                    <td><p><a target="_blank" href="https://goo.gl/lqzEOT">Chrome Web Store</a></p></td>
                 </tr>
             </table>
             <p>I don't like Chrome's new tab page, so I made my own. The extension uses HTML, CSS, and Javascript. It calls the Chrome data-storage API to save user preferences.</p>  
@@ -126,9 +126,10 @@
     
     <div id="footer">
         <div class="wrapper">
-        <p>Adam Howard - 2019<br><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p>&copy; Adam Howard - <span id="currentYear"></span><br><a href="privacy-policy.html">Privacy Policy</a></p>
         </div>
     </div>
     
+    <script>document.getElementById("currentYear").innerHTML = new Date().getFullYear();</script>
 </body>
 </html>
