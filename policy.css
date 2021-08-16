@@ -19,7 +19,7 @@ h3 {
 	margin-top: 0px;
 }
 
-p { margin-top: 15px; }
+p { margin-top: 15px; color: rgba(0,0,0,0.8); }
 a { color: rgba(10,100,220,1); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
